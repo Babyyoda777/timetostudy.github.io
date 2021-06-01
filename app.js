@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const timeLeftDisplay = document.querySelector('#start-button')
+    const timeLeftDisplay = document.querySelector('.time-left')
     const startBtn = document.querySelector('#start-button')
     let timeLeft = 10
 
