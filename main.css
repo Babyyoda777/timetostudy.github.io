@@ -22,14 +22,15 @@ body {
   color: var(--font-color);
   max-width: 90%;
   margin: 0 auto;
-  font-size: calc(1rem + 0.25vh);
+  font-size: calc(1rem + 0.25ex);
+
 }
 
 h1 {
   color: var(--heading-color);
   font-family: "Sansita One", serif;
   font-size: 2rem;
-  margin-bottom: 1vh;
+  margin-bottom: 1ex;
 }
 
 p {
@@ -63,7 +64,7 @@ section {
   font-size: 1rem;
   font-style: italic;
   display: block;
-  margin-bottom: 4vh;
+  margin-bottom: 4ex;
   color: var(--secondary-color);
 }
 
@@ -148,16 +149,21 @@ input:checked+.slider:before {
   margin-top: 20px;
   margin-left: 10px;
   margin-bottom: 10px;
-  padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .container {
-  display: flex;
+  width: auto;
   justify-content: center;
   align-items: center;
-  padding-top: 5em;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 200px;
 }
 
 .child {
@@ -168,7 +174,13 @@ input:checked+.slider:before {
   align-items: center;
   justify-content: center;
 }
-
+.text{
+  font-size: 50px;
+  font-family: sans-serif;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
 svg:not(:root).svg-inline--fa {
   overflow: visible
 }
