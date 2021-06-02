@@ -1,22 +1,21 @@
 <title>
   Study With Me!
 </title>
+<link rel="icon" href="./book.svg" sizes="any" type="image/svg+xml">
 <link rel="stylesheet" type="text/css" href="main.css">
-
 <script>
   window.console = window.console || function(t) {};
 </script>
-
-
-
+<style media="" data-href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+  /* cyrillic-ext */
+</style>
 <script>
   if (document.location.search.match(/type=embed/gi)) {
     window.parent.postMessage("resize", "*");
   }
 </script>
 
-
-</head>
+<head>
 
 <body translate="no">
   <nav>
@@ -27,21 +26,49 @@
       </label>
       <em>Enable Dark Mode!</em>
     </div>
-
   </nav>
-  <div class="container">
-    <div class="child">
-      <p id="timer">5</p>
-      <button onclick="TimerObj.start()" class="button">Start studying!</button>
-      <button onclick="TimerObj.end()" class="button">Wait! There's an emergency!</button>
-    </div>
-  </div>
-
-  <script id="rendered-js" src="app.js">
-
+  <script>
+    window.console = window.console || function(t) {};
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+  </head>
 
+  <body translate="no">
+    <div class="container">
+      <div class="child">
+        <div id="title" style="">Paused</div>
+        <div id="countdown">
+          <span id="minutes">59</span>
+          <span id="seconds">55</span>
+        </div>
+        <div id="controls" class="paused">
+          <button id="start" class="button"> Start</button>
+          <button id="pause" class="button">Pause</button>
+          <button id="reset" class="button"> Reset</button>
+        </div>
+        <div id="options" style="">
+          <div id="session">
+            <span class="option-title">Study Time</span>
+            <input id="sessionInput" type="number" value="30" max="60" min="5">
+          </div>
+          <div id="break">
+            <span class="option-title">Break Time</span>
+            <input id="breakInput" type="number" value="5" max="10" min="1">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
 
+  </html>
+  <script id="rendered-js" src="app.js"></script>
 </body>
 
 </html>
