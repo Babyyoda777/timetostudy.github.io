@@ -35,6 +35,7 @@ h1 {
 p {
   font-size: 1.1rem;
   line-height: 1.6rem;
+  display: flex;
 }
 
 a {
@@ -72,6 +73,8 @@ nav {
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .theme-switch-wrapper em {
@@ -138,4 +141,23 @@ input:checked+.slider:before {
   font-size: 1.1rem;
   line-height: 1.6rem;
   color: var(--font-color);
+  margin-top: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
 }
