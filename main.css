@@ -4,7 +4,7 @@
   --primary-color: #302AE6;
   --secondary-color: #536390;
   --font-color: #424242;
-  --bg-color: lightblue;
+  --bg-color: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
   --heading-color: #292922;
 }
 
@@ -12,18 +12,17 @@
   --primary-color: #9A97F3;
   --secondary-color: #818cab;
   --font-color: #e1e1ff;
-  --bg-color: #161625;
+  --bg-color: linear-gradient(90deg, hsla(333, 90%, 35%, 1) 0%, hsla(33, 85%, 36%, 1) 100%);
   --heading-color: #818cab;
 }
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: var(--bg-color);
+  background: var(--bg-color);
   color: var(--font-color);
   max-width: 90%;
   margin: 0 auto;
   font-size: calc(1rem + 0.25ex);
-
 }
 
 h1 {
@@ -157,12 +156,12 @@ input:checked+.slider:before {
   width: auto;
   justify-content: center;
   align-items: center;
-  background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 200px;
 }
 
@@ -174,13 +173,15 @@ input:checked+.slider:before {
   align-items: center;
   justify-content: center;
 }
-.text{
+
+.text {
   font-size: 50px;
   font-family: sans-serif;
   align-content: center;
   display: flex;
   justify-content: center;
 }
+
 svg:not(:root).svg-inline--fa {
   overflow: visible
 }
@@ -612,4 +613,15 @@ svg:not(:root).svg-inline--fa {
   overflow: visible;
   position: static;
   width: auto
+}
+
+#toggle {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px;
+  justify-content: center;
 }
