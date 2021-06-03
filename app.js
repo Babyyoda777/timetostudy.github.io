@@ -46,7 +46,7 @@ $(() => {
     breakMax = 10,
     breakMin = 1,
     sessionLength = 30 * 60,
-    sessionMax = 60,
+    sessionMax = 90,
     sessionMin = 1,
     sessionNum = 0,
     countdown,
@@ -79,7 +79,7 @@ $(() => {
     $options.slideUp(143);
     $controls.removeClass().addClass("started");
     $title.fadeOut(43, function() {
-      $(this).html("Session " + sessionNum).fadeIn();
+      $(this).html("Study time!").fadeIn();
     });
     $audio.animate({
       volume: 1
@@ -90,7 +90,7 @@ $(() => {
   function startBreak() {
     countType = "break";
     $title.fadeOut(43, function() {
-      $(this).html("Break " + sessionNum).fadeIn();
+      $(this).html("Break time!").fadeIn();
     });
     start(remainingTime || breakLength);
   }
