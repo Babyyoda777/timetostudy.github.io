@@ -150,6 +150,14 @@ input:checked+.slider:before {
   padding: 4px;
 }
 
+.button:hover {
+  background-color: lightcyan;
+}
+
+.button:active {
+  transform: translateY(4px);
+}
+
 .container {
 
   justify-content: center;
@@ -638,4 +646,15 @@ svg:not(:root).svg-inline--fa {
   font-size: 15px;
   justify-content: center;
   /* OPTIMIZE:  */
+}
+
+#audio-1{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#sound-title{
+  padding-top:5%;
+  padding-bottom: 2.5%;
+  
 }
