@@ -160,9 +160,10 @@ input:checked+.slider:before {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  padding-top: 700px;
+  padding-top: 650px;
   font-size: 50px;
   overflow: auto;
+  margin-bottom: 50px;
 }
 
 .child {
