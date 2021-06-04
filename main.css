@@ -180,8 +180,9 @@ input:checked+.slider:before {
 }
 
 .child {
+  padding-top: 500px;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   align-items: center;
