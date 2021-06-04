@@ -844,3 +844,17 @@ a {
   background: black;
   height: 6px;
 }
+
+#image-1{
+  display: flex;
+  justify-content: center;
+}
+
+#image-actual{
+  width: 500px;
+
+}
+
+#image-actual:hover{
+  transform: translateY(10px);
+}
