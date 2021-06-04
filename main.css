@@ -76,7 +76,6 @@ nav {
 /*slider switch css */
 .theme-switch-wrapper {
   display: flex;
-  
   margin-right: 20px;
   margin-top: 20px;
 }
@@ -159,7 +158,6 @@ input:checked+.slider:before {
 }
 
 .container {
-
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.25);
@@ -168,12 +166,18 @@ input:checked+.slider:before {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  padding-top: 650px;
   font-size: 50px;
+  height: 750px;
+  resize: both;
   overflow: auto;
   margin-bottom: 50px;
 }
-
+.centre{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+}
 .child {
   position: absolute;
   top: 50%;
@@ -181,6 +185,7 @@ input:checked+.slider:before {
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
+  overflow: visible;
 }
 
 .text {
@@ -643,19 +648,20 @@ svg:not(:root).svg-inline--fa {
   justify-content: center;
 }
 
-#fix{
+#fix {
   font-size: 15px;
   justify-content: center;
   /* OPTIMIZE:  */
 }
 
-#audio-1{
-  padding-top: 5%;
-  padding-bottom: 5%;
+#audio-1 {
+justify-content:center;
+overflow: auto;
+display: flex;
+margin-top: 15%;
 }
 
-#sound-title{
-  padding-top:5%;
+#sound-title {
+  padding-top: 5%;
   padding-bottom: 2.5%;
-  
 }
