@@ -186,7 +186,7 @@ input:checked+.slider:before {
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
-  overflow: visible;
+  overflow: auto;
 }
 
 .text {
